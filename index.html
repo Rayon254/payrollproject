@@ -12,15 +12,13 @@
 
     <p>Enter the gross salary below amount to calculate your net amount</p>
 
-    <form>
+    <form id="myform" action="">
+
         <label for="basic_salary">Basic Salary:</label>
         <input type="text" id="basic_salary" />
-
         <label for="benefits">Benefits:</label>
         <input type="text" id="benefits" />
-        <button type="button" onclick="calculateSum()" style="background-color: orange; color: white;">Calculate
-            Sum</button>
-
+        <input type="submit" value="Calculate Sum" style="background-color: orange; color: white;" />
     </form>
 
 
@@ -39,14 +37,10 @@
                 <td id="gross_salary"></td>
             </tr>
             <tr>
-                <td>NSSF Tier1</td>
-                <td id="nssf_tier1"></td>
+                <td>NSSF</td>
+                <td id="nssf"></td>
             </tr>
-            <tr>
-                <td>NSSF Tier2</td>
-                <td id="nssf_tier2"></td>
-            </tr>
-            <tr>
+                       <tr>
                 <td>NHDF</td>
                 <td id="nhdf"></td>
             </tr>
